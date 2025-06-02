@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Car5 from "../assets/Images/Car5.jpg";
-import Car2 from "../assets/Images/Car2.jpg";
-import Car3 from "../assets/Images/Car3.jpg";
+import Car5 from "../assets/Car5.jpg";
+import Car2 from "../assets/Car2.jpg";
+import Car3 from "../assets/Car3.jpg";
 
 const Transport = () => {
   return (

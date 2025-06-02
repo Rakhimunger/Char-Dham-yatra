@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ked1 from "../assets/Images/Ked1.jpg";
-import Spirital1 from "../assets/Images/Spirital1.jpg";
-import Spirital3 from "../assets/Images/Spirital3.jpg";
+import Spirital1 from "../assets/Spirital1.jpg";
+import Spirital3 from "../assets/Spirital3.jpg";
+import ked1 from "../assets/ked1.jpg";
 import { Link } from "react-router-dom";
 
 const Slider = () => {
