@@ -35,14 +35,14 @@ const deals = [
 
 const SpecialDeals = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 py-20 px-4">
+    <section className="bg-gradient-to-b from-white to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        {/* Responsive and Centered Heading */}
+        {/* Heading */}
         <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 text-yellow-900 leading-snug">
           🕉️ Embark on a Divine Char Dham Journey 2025
         </h2>
 
-        {/* Responsive and Centered Paragraph */}
+        {/* Paragraph */}
         <p className="text-center text-sm sm:text-base md:text-lg mb-10 sm:mb-12 max-w-2xl mx-auto text-gray-700 leading-relaxed">
           Join the sacred pilgrimage to Char Dham and receive the divine
           blessings of the Lords. Experience peace, devotion, and spiritual
@@ -50,8 +50,8 @@ const SpecialDeals = () => {
           meaningful with our specially curated packages.
         </p>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Deals Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {deals.map((deal, idx) => (
             <div
               key={idx}
@@ -60,14 +60,16 @@ const SpecialDeals = () => {
               <span className="absolute top-0 right-0 bg-black text-white text-xs px-3 py-1 rounded-bl-2xl font-semibold">
                 {deal.badge}
               </span>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
                 {deal.title}
               </h3>
-              <p className="text-orange-600 font-semibold text-base mb-3">
+              <p className="text-orange-600 font-semibold text-sm sm:text-base mb-3">
                 {deal.highlight}
               </p>
-              <p className="text-gray-700 mb-6 text-sm">{deal.description}</p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md">
+              <p className="text-gray-700 text-sm sm:text-base mb-6">
+                {deal.description}
+              </p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md w-full sm:w-auto">
                 {deal.buttonText}
               </button>
               <div className="mt-4 text-xs text-gray-600">{deal.footer}</div>
@@ -76,10 +78,10 @@ const SpecialDeals = () => {
         </div>
 
         {/* Link */}
-        <div className="mt-14">
+        <div className="mt-12">
           <a
             href="#"
-            className="text-blue-700 hover:underline text-base font-medium inline-flex items-center"
+            className="text-blue-700 hover:underline text-sm sm:text-base font-medium inline-flex items-center"
           >
             View All Packages &rarr;
           </a>
