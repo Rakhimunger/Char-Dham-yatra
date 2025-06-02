@@ -21,10 +21,10 @@ const App = () => {
       <Transport />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/char-dham" element={<Chardham />} />
-        <Route path="/do-dham" element={<Dodham />} />
-        <Route path="/badri-nath" element={<Badrinath />} />
-        <Route path="/kedar-nath" element={<KedharNath />} />
+        <Route path="char-dham" element={<Chardham />} />
+        <Route path="do-dham" element={<Dodham />} />
+        <Route path="badri-nath" element={<Badrinath />} />
+        <Route path="kedar-nath" element={<KedharNath />} />
       </Routes>
     </div>
   );
