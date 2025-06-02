@@ -7,15 +7,18 @@ import Chardham from "./Pages/Chardham";
 import Badrinath from "./Pages/Badrinath";
 import KedharNath from "./Pages/Kedarnath";
 import Dodham from "./Pages/Dodham";
-
-// import Deals from "./Pages/Deals";
+import Slider from "./Componets/Slider";
+import Transport from "./Pages/Transport";
+import Deals from "./Pages/Deals";
 
 const App = () => {
   return (
     <div>
       {/* <Header /> */}
       <Navbar />
-      {/* <Deals /> */}
+      <Slider />
+      <Deals />
+      <Transport />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/char-dham" element={<Chardham />} />
