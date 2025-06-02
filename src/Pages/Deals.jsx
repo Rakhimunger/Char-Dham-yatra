@@ -37,16 +37,20 @@ const SpecialDeals = () => {
   return (
     <section className="bg-gradient-to-b from-white to-gray-100 py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-5xl font-extrabold mb-4 text-yellow-900">
+        {/* Responsive and Centered Heading */}
+        <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 text-yellow-900 leading-snug">
           🕉️ Embark on a Divine Char Dham Journey 2025
         </h2>
-        <p className="text-lg mb-12 max-w-3xl mx-auto text-gray-700">
+
+        {/* Responsive and Centered Paragraph */}
+        <p className="text-center text-sm sm:text-base md:text-lg mb-10 sm:mb-12 max-w-2xl mx-auto text-gray-700 leading-relaxed">
           Join the sacred pilgrimage to Char Dham and receive the divine
           blessings of the Lords. Experience peace, devotion, and spiritual
           awakening on this holy journey. Make your pilgrimage effortless and
           meaningful with our specially curated packages.
         </p>
 
+        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {deals.map((deal, idx) => (
             <div
@@ -71,6 +75,7 @@ const SpecialDeals = () => {
           ))}
         </div>
 
+        {/* Link */}
         <div className="mt-14">
           <a
             href="#"
