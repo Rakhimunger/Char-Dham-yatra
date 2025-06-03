@@ -1,64 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
-import Dodhamimg from "../assets/Dodhamimg.jpg";
 
-export default function Dodham() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 px-4 py-10 sm:px-6 lg:px-12">
-      {/* Main Content */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        {/* Image Section */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="rounded-2xl shadow-xl border border-gray-100 h-full overflow-hidden"
-        >
-          <img
-            src={Dodhamimg}
-            alt="Char Dham"
-            className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-          />
-        </motion.div>
+const Dodham = () => {
+  return <div></div>;
+};
 
-        {/* Info Card */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col"
-        >
-          <h3 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-5">
-            Char Dham
-          </h3>
-
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-            The Char Dham Yatra is a complete spiritual journey through the
-            Himalayas, encompassing four sacred shrines of immense religious
-            significance: Badrinath, Kedarnath, Gangotri, and Yamunotri.
-          </p>
-
-          <ul className="mt-6 space-y-3 text-sm text-gray-800">
-            {[
-              "Complete spiritual circuit",
-              "Open May to October",
-              "Scenic Himalayan routes",
-              "Rich cultural heritage",
-            ].map((item, index) => (
-              <li key={index} className="flex items-center">
-                <span className="text-yellow-500 mr-2">✓</span> {item}
-              </li>
-            ))}
-          </ul>
-
-          <a
-            href="#"
-            className="mt-6 inline-block w-fit text-white bg-orange-600 hover:bg-orange-700 transition-all duration-300 px-4 py-2 rounded-full font-semibold shadow-lg"
-          >
-            Start Yatra →
-          </a>
-        </motion.div>
-      </section>
-    </div>
-  );
-}
+export default Dodham;

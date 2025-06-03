@@ -51,21 +51,21 @@ const faqs = [
 
 const FAQPage = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-yellow-50 via-orange-100 to-orange-50 py-12 px-4 sm:px-6 md:px-12 lg:px-24">
-      <div className="text-center mb-12">
-        <p className="text-orange-600 font-semibold text-xs sm:text-sm tracking-widest uppercase">
+    <section className="min-h-screen bg-gradient-to-b from-yellow-50 via-orange-100 to-orange-50 py-8 px-3 sm:py-12 sm:px-6 lg:px-10">
+      <div className="text-left sm:text-center mb-6 sm:mb-12 px-2 sm:px-0">
+        <p className="text-orange-600 font-semibold text-[11px] sm:text-xs tracking-widest uppercase">
           🙏 Frequently Asked Questions
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 drop-shadow">
+        <h2 className="text-lg sm:text-3xl font-bold text-blue-900 drop-shadow leading-snug sm:leading-normal">
           Common Questions About Char Dham Yatra
         </h2>
-        <p className="mt-3 text-gray-700 text-sm sm:text-base max-w-2xl mx-auto px-2">
+        <p className="mt-2 sm:mt-3 text-gray-700 text-xs sm:text-sm max-w-xl sm:max-w-2xl mx-auto px-1 sm:px-0">
           Here are some frequently asked questions about our services for this
           spiritual journey. 🛕
         </p>
       </div>
 
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 ">
+      <div className="max-w-screen-xl mx-4 sm:mx-auto grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 px-0 sm:px-2 md:px-4">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
@@ -73,16 +73,16 @@ const FAQPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="bg-white border border-orange-200 shadow-lg rounded-2xl p-10 hover:shadow-xl relative overflow-hidden"
+            className="bg-white border border-orange-200 shadow-md rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-lg overflow-hidden relative w-full max-w-full"
           >
-            <div className="absolute top-2 right-4 text-orange-200 text-4xl">
+            <div className="absolute top-2 right-3 text-orange-100 text-3xl sm:text-4xl select-none pointer-events-none">
               🕉️
             </div>
-            <h3 className="text-lg font-semibold text-orange-700 mb-2 flex items-center gap-2">
+            <h3 className="text-sm sm:text-base font-semibold text-orange-700 mb-2 flex items-start gap-2">
               {faq.question}
             </h3>
-            <p className="text-gray-800 text-sm leading-relaxed">
-              ✅ {faq.answer}
+            <p className="text-gray-800 text-xs sm:text-sm leading-relaxed">
+              {faq.answer}
             </p>
           </motion.div>
         ))}

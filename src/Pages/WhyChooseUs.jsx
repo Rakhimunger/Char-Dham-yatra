@@ -65,9 +65,9 @@ const WhyChooseUs = () => {
         {features.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition"
+            className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition text-center sm:text-left flex flex-col items-center sm:items-start"
           >
-            <div className="bg-blue-700 rounded-full w-12 h-12 flex items-center justify-center mb-4 hover:bg-orange-600">
+            <div className="bg-blue-700 rounded-full w-12 h-12 flex items-center justify-center mb-4 hover:bg-orange-600 transition">
               {item.icon}
             </div>
             <h3 className="font-semibold text-blue-800 text-lg">

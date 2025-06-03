@@ -29,7 +29,7 @@ export default function KedarnathPage() {
           className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col"
         >
           <h3 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-5">
-            Dodham
+            Chardham
           </h3>
 
           <div className="space-y-2 text-sm text-gray-600">
@@ -67,7 +67,7 @@ export default function KedarnathPage() {
             href="#"
             className="mt-6 inline-block w-fit text-white bg-orange-600 hover:bg-orange-700 transition-all duration-300 px-4 py-2 rounded-full font-semibold shadow-lg"
           >
-            Explore Kedarnath →
+            Explore Chardham →
           </a>
         </motion.div>
       </section>

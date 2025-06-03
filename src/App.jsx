@@ -12,10 +12,12 @@ import Transport from "./Pages/Transport";
 import Deals from "./Pages/Deals";
 import BadrinathPage from "./Pages/BadrinathPage";
 import KedarnathPage from "./Pages/KedarnathPage";
-import Badrinathpage from "./Pages/BadrinathPage";
+import DodhamPage from "./Pages/DodhamPage";
 import ChardhamPage from "./Pages/ChardhamPage";
 import WhyChooseUs from "./Pages/WhyChooseUs";
 import FAQPage from "./Pages/FAQPage";
+// import Footer from "./Componets/Footer";
+import Testimonials from "./Pages/Testimonal";
 
 const App = () => {
   return (
@@ -27,8 +29,10 @@ const App = () => {
       <Transport />
       <BadrinathPage />
       <KedarnathPage />
+      <DodhamPage />
       <ChardhamPage />
       <WhyChooseUs />
+      <Testimonials />
       <FAQPage />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,6 +41,7 @@ const App = () => {
         <Route path="badri-nath" element={<Badrinath />} />
         <Route path="kedar-nath" element={<KedharNath />} />
       </Routes>
+      {/* <Footer /> */}
     </div>
   );
 };

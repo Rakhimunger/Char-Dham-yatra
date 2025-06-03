@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import badrinathimg from "../assets/badrinathimg.jpg";
 
-export default function KedarnathPage() {
+export default function BadrinathPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 px-4 py-8 sm:px-6 lg:px-12">
       {/* Intro Section */}
@@ -45,7 +45,7 @@ export default function KedarnathPage() {
           className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between"
         >
           <h3 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-4">
-            CharDham
+            Badrinath
           </h3>
 
           <div className="space-y-2 text-sm text-gray-600">
