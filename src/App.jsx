@@ -10,6 +10,12 @@ import Dodham from "./Pages/Dodham";
 import Slider from "./Componets/Slider";
 import Transport from "./Pages/Transport";
 import Deals from "./Pages/Deals";
+import BadrinathPage from "./Pages/BadrinathPage";
+import KedarnathPage from "./Pages/KedarnathPage";
+import Badrinathpage from "./Pages/BadrinathPage";
+import ChardhamPage from "./Pages/ChardhamPage";
+import WhyChooseUs from "./Pages/WhyChooseUs";
+import FAQPage from "./Pages/FAQPage";
 
 const App = () => {
   return (
@@ -19,6 +25,11 @@ const App = () => {
       <Slider />
       <Deals />
       <Transport />
+      <BadrinathPage />
+      <KedarnathPage />
+      <ChardhamPage />
+      <WhyChooseUs />
+      <FAQPage />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="char-dham" element={<Chardham />} />

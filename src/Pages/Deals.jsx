@@ -38,7 +38,7 @@ const SpecialDeals = () => {
     <section className="bg-gradient-to-b from-white to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 text-yellow-900 leading-snug">
+        <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 text-blue-900 leading-snug">
           🕉️ Embark on a Divine Char Dham Journey 2025
         </h2>
 
@@ -51,7 +51,7 @@ const SpecialDeals = () => {
         </p>
 
         {/* Deals Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-6">
           {deals.map((deal, idx) => (
             <div
               key={idx}
