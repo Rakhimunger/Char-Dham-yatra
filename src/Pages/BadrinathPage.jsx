@@ -59,7 +59,7 @@ export default function BadrinathPage() {
             </p>
           </div>
 
-          <p className="text-gray-700 mt-4 text-sm sm:text-base leading-relaxed">
+          <p className="text-gray-700 mt-4 text-sm sm:text-base leading- ">
             One of the twelve Jyotirlingas of Lord Shiva, Kedarnath is nestled
             in the Garhwal Himalayan range. The temple is only accessible by a
             16 km trek from Gaurikund and remains closed during winter due to
