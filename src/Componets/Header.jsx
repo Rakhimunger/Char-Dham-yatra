@@ -38,7 +38,7 @@ const Header = () => {
         {/* Right Side: Desktop Menu + Hamburger */}
         <div className="flex items-center">
           {/* Desktop Menu (md and above) */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-10">
             {/* Offers */}
             <div className="relative flex items-center space-x-1 group cursor-pointer">
               <Gift className="w-4 h-4 text-red-500 group-hover:text-red-600" />

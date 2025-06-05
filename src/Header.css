@@ -1,0 +1,64 @@
+/* ================= Google Translate Custom Styles ================= */
+
+/* Hide default Google Translate widget button */
+.goog-te-gadget-simple {
+  display: none !important;
+}
+
+/* Hide top banner that appears on translation */
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Prevent spacing issues from hidden banner */
+body {
+  top: 0px !important;
+}
+
+/* Hide Google branding/logo */
+.goog-te-gadget img {
+  display: none !important;
+}
+
+/* Hide tooltip, spinner, and unwanted elements */
+#goog-gt-tt,
+.goog-tooltip,
+.activity-root,
+.status-message,
+.goog-te-spinner-pos,
+.goog-te-spinner-animation,
+#gtx-trans {
+  display: none !important;
+}
+
+/* Style the Google language dropdown (if visible) */
+.goog-te-combo {
+  padding: 10px !important;
+  border-radius: 20px !important;
+  font-size: 14px !important;
+  font-family: inherit !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  background-color: #fff !important;
+}
+
+/* Support for mobile hidden translate box */
+#google_translate_element_mobile {
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Optional: Custom class to apply same style via JS */
+.custom-google-dropdown {
+  padding: 10px !important;
+  border-radius: 20px !important;
+  font-size: 14px !important;
+  font-family: inherit !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  background-color: #fff !important;
+}

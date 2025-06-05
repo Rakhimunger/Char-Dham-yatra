@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           {/* Our Services */}
-          <div>
+          <div className="">
             <h3 className="text-lg font-semibold text-[#FF5B22] mb-1 sm:mb-2">
               Our Services
             </h3>

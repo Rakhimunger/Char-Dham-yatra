@@ -62,7 +62,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className="hover:t
-            ext-orange-600 hover:rounded-2xl px-4 py-1 text-oarnge-800  font-bold"
+            ext-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800  font-bold"
           >
             Home
           </NavLink>
