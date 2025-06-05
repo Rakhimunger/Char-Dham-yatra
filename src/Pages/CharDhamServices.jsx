@@ -1,79 +1,88 @@
 import React from "react";
-import Temple2 from "../assets/Temple2.jpg";
-import Temple1 from "../assets/Temple1.jpg";
+import antbus from "../assets/antbus.jpg";
 import Teertyatra from "../Pages/Teertyatra";
-import Spirital3 from "../assets/Spirital3.jpg";
 
 const services = [
   {
-    img: Temple2,
-    title: "Badrinath Dham",
-    description:
-      "Dedicated to Lord Vishnu, located in Uttarakhand. A key pilgrimage site among the Char Dhams.",
+    img: antbus,
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationRate: "₹14200/- per km",
   },
   {
-    img: Temple1,
-    title: "Kedarnath Dham",
-    description:
-      "One of the twelve Jyotirlingas, located in the Himalayas, devoted to Lord Shiva.",
+    img: antbus,
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationRate: "₹14200/- per km",
   },
   {
-    img: Spirital3,
-    title: "Gangotri Dham",
-    description:
-      "Source of River Ganga, dedicated to Goddess Ganga. Peaceful and divine atmosphere.",
-  },
-  {
-    img: Temple2,
-    title: "Yamunotri Dham",
-    description:
-      "Source of River Yamuna, and abode of Goddess Yamuna. Ideal for spiritual seekers.",
-  },
-  {
-    img: Spirital3,
-    title: "Yatra Assistance",
-    description:
-      "We provide complete guidance, travel help, and spiritual support during your journey.",
-  },
-  {
-    img: Temple2,
-    title: "Badrinath Dham",
-    description:
-      "Dedicated to Lord Vishnu, located in Uttarakhand. A key pilgrimage site among the Char Dhams.",
+    img: antbus,
+    title: "AC Delux Bus 49 Seater (2+2)",
+    city: "Delhi NCR",
+    localRun: "4 Hours 40 km",
+    localPrice: "₹14200/-",
+    outstationRate: "₹14200/- per km",
   },
 ];
 
 const CharDhamServices = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-400 via-yellow-200 to-orange-100 px-6 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4">
-        SERVICES WE PROVIDE
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 px-6 py-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-10">
+        🚌 Our Luxury Bus Services
       </h2>
-      <p className="text-center text-black text-lg mb-10">
-        Tailored Religious Assistance for Your Char Dham Yatra
-      </p>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white border border-yellow-300 rounded-xl overflow-hidden w-full max-w-xs text-center transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
+            className="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform hover:scale-105 duration-300 p-4"
           >
             <img
               src={service.img}
               alt={service.title}
-              className="h-48 w-full object-cover"
+              className="h-40 w-full object-cover transform scale-x-[-1] rounded-md"
             />
-            <div className="p-5">
-              <h3 className="text-xl font-bold text-blue-800 mb-2">
+            <div className="mt-4 space-y-2">
+              <h3 className="text-lg font-bold text-blue-800">
                 {service.title}
               </h3>
-              <p className="text-black text-sm">{service.description}</p>
+              <p className="text-gray-600 text-sm">
+                <span className="font-semibold">City:</span>{" "}
+                <span className="text-red-600">{service.city}</span>
+              </p>
+              <p className="text-gray-600 text-sm">
+                <span className="font-medium">Local Run:</span>{" "}
+                {service.localRun} —{" "}
+                <span className="text-blue-900 font-bold">
+                  {service.localPrice}
+                </span>
+              </p>
+              <p className="text-gray-600 text-sm">
+                <span className="font-medium">Outstation Rate:</span> Per km —{" "}
+                <span className="text-blue-900 font-bold">
+                  {service.outstationRate}
+                </span>
+              </p>
+
+              <div className="flex justify-between items-center mt-4">
+                <button className="px-3 py-1.5 bg-white border border-blue-800 text-blue-800 text-sm font-semibold rounded-full hover:bg-blue-100 transition">
+                  Details →
+                </button>
+                <button className="px-3 py-1.5 bg-blue-800 text-white text-sm font-semibold rounded-full hover:bg-blue-900 transition">
+                  Book Now →
+                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="mt-10">
+
+      <div className="mt-16">
         <Teertyatra />
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Templeimg from "../assets/Templeimg.jpg";
 import { motion } from "framer-motion";
 import CharDhamServices from "../Pages/CharDhamServices";
+import Transport from "./Transport";
 
 const Chardham = () => {
   return (
@@ -31,6 +32,7 @@ const Chardham = () => {
         </motion.div>
       </div>
       <div>
+        <Transport />
         <CharDhamServices />
       </div>
     </div>
