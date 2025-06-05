@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-100 text-slate-900 shadow-md sticky top-0 z-50 w-full">
+    <nav className="bg-slate-100 text-slate-900 shadow-md sticky top-0 z-50 w-full ">
       <div className="container mx-auto flex justify-between items-center px-4 py-3 md:py-2">
         {/* Logo */}
-        <div className="w-1/2 md:w-1/4">
-          <img src={logo} alt="logo" className="h-12 w-auto object-contain" />
+        <div className="w-1/3 md:w-1/6">
+          <img src={logo} alt="logo" className="h-10 w-auto object-contain" />
         </div>
 
         {/* Hamburger Icon */}
@@ -62,37 +62,37 @@ const Navbar = () => {
           <NavLink
             to="/"
             className="hover:t
-            ext-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            ext-orange-600 hover:rounded-2xl px-4 py-1 text-oarnge-800  font-bold"
           >
             Home
           </NavLink>
           <NavLink
             to="char-dham"
-            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-bold "
           >
             Char Dham
           </NavLink>
           <NavLink
             to="/do-dham"
-            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800  font-bold"
           >
             Do Dham
           </NavLink>
           <NavLink
             to="/badri-nath"
-            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-bold "
           >
             Badri Nath
           </NavLink>
           <NavLink
             to="/kedar-nath"
-            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-bold "
           >
-            Kedar Nath
+            Kedaar Nath
           </NavLink>
           <NavLink
             to="/book-now"
-            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-medium"
+            className="hover:text-orange-600 hover:rounded-2xl px-4 py-1 text-gray-800 font-bold"
           >
             Book Now
           </NavLink>

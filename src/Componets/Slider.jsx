@@ -30,7 +30,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[70vh] lg:h-[90vh] overflow-hidden">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -44,14 +44,14 @@ const Slider = () => {
             />
 
             {index === 0 && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4 sm:p-6">
-                <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)]">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 sm:px-6 md:px-8">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-2 drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)]">
                   WELCOME TO ANT TRAVELS
                 </h1>
-                <h2 className="text-xl sm:text-3xl md:text-4xl font-semibold text-orange-300 mb-3 drop-shadow-[1px_1px_4px_rgba(0,0,0,0.7)]">
+                <h2 className="text-lg sm:text-xl md:text-3xl font-semibold text-orange-300 mb-3 drop-shadow-[1px_1px_4px_rgba(0,0,0,0.7)]">
                   Char Dham Yatra
                 </h2>
-                <p className="text-md sm:text-lg md:text-xl font-medium text-white max-w-3xl mb-6 leading-relaxed drop-shadow-[1px_1px_3px_rgba(0,0,0,0.6)]">
+                <p className="text-xs sm:text-sm md:text-lg font-medium text-white max-w-xs sm:max-w-md md:max-w-2xl mb-4 leading-relaxed drop-shadow-[1px_1px_3px_rgba(0,0,0,0.6)]">
                   <span className="text-yellow-400 font-semibold">
                     Transportation Services
                   </span>{" "}
@@ -67,14 +67,14 @@ const Slider = () => {
                   </span>
                   .
                 </p>
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
                   <Link to="/vision">
-                    <button className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-700 transition shadow-lg">
+                    <button className="px-4 py-2 sm:px-6 sm:py-3 bg-orange-500 text-white rounded-md hover:bg-orange-700 transition shadow-lg text-xs sm:text-sm">
                       Book Your Vehicle
                     </button>
                   </Link>
                   <Link to="/donationForm">
-                    <button className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-800 transition shadow-lg">
+                    <button className="px-4 py-2 sm:px-6 sm:py-3 bg-red-600 text-white rounded-md hover:bg-red-800 transition shadow-lg text-xs sm:text-sm">
                       View Service
                     </button>
                   </Link>
@@ -88,26 +88,26 @@ const Slider = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full opacity-75 hover:opacity-100 transition"
+        className="absolute top-1/2 left-3 sm:left-5 transform -translate-y-1/2 bg-gray-800 text-white p-2 sm:p-3 rounded-full opacity-75 hover:opacity-100 transition"
         aria-label="Previous Slide"
       >
         ❮
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full opacity-75 hover:opacity-100 transition"
+        className="absolute top-1/2 right-3 sm:right-5 transform -translate-y-1/2 bg-gray-800 text-white p-2 sm:p-3 rounded-full opacity-75 hover:opacity-100 transition"
         aria-label="Next Slide"
       >
         ❯
       </button>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-6 w-full flex justify-center space-x-3">
+      <div className="absolute bottom-4 sm:bottom-6 w-full flex justify-center space-x-2 sm:space-x-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition ${
               index === currentIndex ? "bg-white" : "bg-gray-500"
             }`}
             aria-label={`Go to slide ${index + 1}`}
