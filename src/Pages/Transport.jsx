@@ -28,11 +28,31 @@ const Transport = () => {
             and flexibility for small groups and families.
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
-            <li>Swift Dzire</li>
-            <li>Ertiga</li>
-            <li>Innova Crysta</li>
-            <li>Fortuner</li>
-            <li>Tata Nexon</li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Swift Dzire
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Ertiga
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Innova Crysta
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Fortuner
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Tata Nexon
+              </Link>
+            </li>
           </ul>
           <p className="mt-4 font-semibold text-blue-700">
             Starting from ₹15,000 per day
@@ -51,11 +71,31 @@ const Transport = () => {
             space and comfort for medium-sized groups.
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
-            <li>Force Tempo Traveller 12+1</li>
-            <li>Force Tempo Traveller 14+1</li>
-            <li>Force Tempo Traveller 17+1</li>
-            <li>Tempo Traveller Maharaja</li>
-            <li>Tempo Traveller Deluxe</li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Force Tempo Traveller 12+1
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Force Tempo Traveller 14+1
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Force Tempo Traveller 17+1
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Tempo Traveller Maharaja
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                Tempo Traveller Deluxe
+              </Link>
+            </li>
           </ul>
           <p className="mt-4 font-semibold text-blue-700">
             Starting from ₹20,000 per day
@@ -74,10 +114,26 @@ const Transport = () => {
             ensure a safe and comfortable pilgrimage.
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
-            <li>AC Deluxe Bus 21 Seater (2+1)</li>
-            <li>AC Deluxe Bus 27 Seater (2+2)</li>
-            <li>AC Deluxe Bus 32 Seater (2+2)</li>
-            <li>AC Deluxe Bus 40 Seater (2+2)</li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                AC Deluxe Bus 21 Seater (2+1)
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                AC Deluxe Bus 27 Seater (2+2)
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                AC Deluxe Bus 32 Seater (2+2)
+              </Link>
+            </li>
+            <li>
+              <Link to="/CharDhamService" className="hover:underline">
+                AC Deluxe Bus 40 Seater (2+2)
+              </Link>
+            </li>
           </ul>
           <p className="mt-4 font-semibold text-blue-700">
             Starting from ₹30,000 per day

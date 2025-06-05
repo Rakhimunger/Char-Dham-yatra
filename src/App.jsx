@@ -10,12 +10,14 @@ import Badrinath from "./Pages/Badrinath";
 import KedharNath from "./Pages/Kedarnath";
 import Dodham from "./Pages/Dodham";
 import Booknow from "./Pages/Booknow";
-import Header from "./Componets/Header";
+import Transport from "./Pages/Transport";
+import CharDhamServices from "./Pages/CharDhamServices";
+//
 
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
 
       <Routes>
@@ -25,6 +27,8 @@ const App = () => {
         <Route path="/badri-nath" element={<Badrinath />} />
         <Route path="/kedar-nath" element={<KedharNath />} />
         <Route path="/book-now" element={<Booknow />} />
+        <Route path="/transport" element={<Transport />} />
+        <Route path="/CharDhamService" element={<CharDhamServices />} />
       </Routes>
 
       <Footer />
