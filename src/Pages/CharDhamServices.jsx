@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // 🔹 Import Link from React Router
 import antbus from "../assets/antbus.jpg";
 import Teertyatra from "../Pages/Teertyatra";
 
@@ -70,9 +71,11 @@ const CharDhamServices = () => {
               </p>
 
               <div className="flex justify-between items-center mt-4">
-                <button className="px-3 py-1.5 bg-white border border-blue-800 text-blue-800 text-sm font-semibold rounded-full hover:bg-blue-100 transition">
-                  Details →
-                </button>
+                <Link to="/badrinath">
+                  <button className="px-3 py-1.5 bg-white border border-blue-800 text-blue-800 text-sm font-semibold rounded-full hover:bg-blue-100 transition">
+                    Details →
+                  </button>
+                </Link>
                 <button className="px-3 py-1.5 bg-blue-800 text-white text-sm font-semibold rounded-full hover:bg-blue-900 transition">
                   Book Now →
                 </button>
@@ -82,7 +85,8 @@ const CharDhamServices = () => {
         ))}
       </div>
 
-      <div className="mt-16">
+      {/* Include additional section */}
+      <div className="mt-20">
         <Teertyatra />
       </div>
     </div>

@@ -11,7 +11,7 @@ import KedharNath from "./Pages/Kedarnath";
 import Dodham from "./Pages/Dodham";
 import Booknow from "./Pages/Booknow";
 import Transport from "./Pages/Transport";
-import CharDhamServices from "./Pages/CharDhamServices";
+import CharDhamService from "./Pages/CharDhamServices";
 //
 
 const App = () => {
@@ -27,8 +27,8 @@ const App = () => {
         <Route path="/badri-nath" element={<Badrinath />} />
         <Route path="/kedar-nath" element={<KedharNath />} />
         <Route path="/book-now" element={<Booknow />} />
+        <Route path="/charDhamService" element={<CharDhamService />} />
         <Route path="/transport" element={<Transport />} />
-        <Route path="/CharDhamService" element={<CharDhamServices />} />
       </Routes>
 
       <Footer />

@@ -29,27 +29,27 @@ const Transport = () => {
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Swift Dzire
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Ertiga
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Innova Crysta
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Fortuner
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Tata Nexon
               </Link>
             </li>
@@ -72,27 +72,27 @@ const Transport = () => {
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Force Tempo Traveller 12+1
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Force Tempo Traveller 14+1
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Force Tempo Traveller 17+1
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Tempo Traveller Maharaja
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 Tempo Traveller Deluxe
               </Link>
             </li>
@@ -115,22 +115,22 @@ const Transport = () => {
           </p>
           <ul className="text-blue-800 list-disc pl-5 space-y-1">
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 AC Deluxe Bus 21 Seater (2+1)
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 AC Deluxe Bus 27 Seater (2+2)
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 AC Deluxe Bus 32 Seater (2+2)
               </Link>
             </li>
             <li>
-              <Link to="/CharDhamService" className="hover:underline">
+              <Link to="/charDhamService" className="hover:underline">
                 AC Deluxe Bus 40 Seater (2+2)
               </Link>
             </li>

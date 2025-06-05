@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 const Badrinath = () => {
   return (
     <div>
-      {/* 🛕 Banner Section with Motion and Responsive Design */}
-      <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden shadow-xl">
+      {/* 🛕 Banner Section with Responsive Heights */}
+      <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden shadow-xl">
         <img
           src={Templeimg}
           alt="badrinathimg"
@@ -21,7 +21,7 @@ const Badrinath = () => {
           transition={{ duration: 1 }}
           className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold drop-shadow-lg mb-3">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold drop-shadow-lg mb-3">
             Badrinath Dham Yatra
           </h1>
           <p className="text-sm sm:text-lg md:text-2xl max-w-xl mb-6 drop-shadow-md">
