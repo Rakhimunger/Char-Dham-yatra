@@ -3,6 +3,7 @@ import Transport from "./Transport";
 import Teertyatra from "./Teertyatra";
 import Templeimg from "../assets/Templeimg.jpg";
 import { motion } from "framer-motion";
+import BusDetailPage from "../Pages/BusDetailPage";
 
 const Badrinath = () => {
   return (
@@ -55,6 +56,7 @@ const Badrinath = () => {
       <div>
         <Transport />
         <Teertyatra />
+        <BusDetailPage />
       </div>
     </div>
   );

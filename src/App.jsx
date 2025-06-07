@@ -12,6 +12,8 @@ import Dodham from "./Pages/Dodham";
 import Booknow from "./Pages/Booknow";
 import Transport from "./Pages/Transport";
 import CharDhamService from "./Pages/CharDhamServices";
+import BusDetailPage from "./Pages/BusDetailPage";
+
 //
 
 const App = () => {
@@ -29,6 +31,7 @@ const App = () => {
         <Route path="/book-now" element={<Booknow />} />
         <Route path="/charDhamService" element={<CharDhamService />} />
         <Route path="/transport" element={<Transport />} />
+        <Route path="/bus-details" element={<BusDetailPage />} />
       </Routes>
 
       <Footer />

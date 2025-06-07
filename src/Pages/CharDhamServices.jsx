@@ -1,7 +1,8 @@
+// Pages/CharDhamServices.jsx
 import React from "react";
-import { Link } from "react-router-dom"; // 🔹 Import Link from React Router
+import { Link } from "react-router-dom";
 import antbus from "../assets/antbus.jpg";
-import Teertyatra from "../Pages/Teertyatra";
+// import Teertyatra from "./Teertyatra";
 
 const services = [
   {
@@ -71,7 +72,7 @@ const CharDhamServices = () => {
               </p>
 
               <div className="flex justify-between items-center mt-4">
-                <Link to="/badrinath">
+                <Link to="/bus-details">
                   <button className="px-3 py-1.5 bg-white border border-blue-800 text-blue-800 text-sm font-semibold rounded-full hover:bg-blue-100 transition">
                     Details →
                   </button>
@@ -85,10 +86,9 @@ const CharDhamServices = () => {
         ))}
       </div>
 
-      {/* Include additional section */}
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <Teertyatra />
-      </div>
+      </div> */}
     </div>
   );
 };
